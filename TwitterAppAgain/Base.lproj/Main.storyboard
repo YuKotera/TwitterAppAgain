@@ -77,7 +77,11 @@ kok</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="タイムライン一覧" id="1bA-PA-wGM" userLabel="タイムライン一覧">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aJ8-CN-eHI"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aJ8-CN-eHI">
+                            <connections>
+                                <action selector="taTweetpButton:" destination="KDZ-7M-gSl" id="Mht-lb-vY1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>

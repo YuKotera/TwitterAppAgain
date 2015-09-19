@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A40198048ADB085AC041BEDC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D81C8EA0A70A8E328CA144 /* libPods.a */; };
+		C8848C801BAD573A0078FF6B /* hoge.m in Sources */ = {isa = PBXBuildFile; fileRef = C8848C7F1BAD573A0078FF6B /* hoge.m */; };
 		C8A7B78A1BAD3A7500AAD3BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A7B7891BAD3A7500AAD3BD /* AppDelegate.swift */; };
 		C8A7B78C1BAD3A7500AAD3BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A7B78B1BAD3A7500AAD3BD /* ViewController.swift */; };
 		C8A7B78F1BAD3A7500AAD3BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A7B78D1BAD3A7500AAD3BD /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		87D81C8EA0A70A8E328CA144 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6275975DA0B0502DA53AEB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C8848C7E1BAD573A0078FF6B /* TwitterAppAgain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterAppAgain-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8848C7F1BAD573A0078FF6B /* hoge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hoge.m; sourceTree = "<group>"; };
 		C8A7B7841BAD3A7500AAD3BD /* TwitterAppAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterAppAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A7B7881BAD3A7500AAD3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8A7B7891BAD3A7500AAD3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,11 +79,13 @@
 		C8A7B77B1BAD3A7500AAD3BD = {
 			isa = PBXGroup;
 			children = (
+				C8848C7F1BAD573A0078FF6B /* hoge.m */,
 				C8A7B7861BAD3A7500AAD3BD /* TwitterAppAgain */,
 				C8A7B79C1BAD3A7500AAD3BD /* TwitterAppAgainTests */,
 				C8A7B7851BAD3A7500AAD3BD /* Products */,
 				D3AE878500F75AFAEA445D3C /* Pods */,
 				5ADB8AFAC90B3CE6A09240A0 /* Frameworks */,
+				C8848C7E1BAD573A0078FF6B /* TwitterAppAgain-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8848C801BAD573A0078FF6B /* hoge.m in Sources */,
 				C8A7B7AC1BAD47B700AAD3BD /* TimeLineTableViewCell.swift in Sources */,
 				C8A7B78C1BAD3A7500AAD3BD /* ViewController.swift in Sources */,
 				C8A7B7AA1BAD475A00AAD3BD /* TimeLineTableViewController.swift in Sources */,
@@ -408,9 +414,12 @@
 			baseConfigurationReference = 9D6275975DA0B0502DA53AEB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TwitterAppAgain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwitterAppAgain-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -419,9 +428,11 @@
 			baseConfigurationReference = EADC14D04101AC5340060A91 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TwitterAppAgain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwitterAppAgain-Bridging-Header.h";
 			};
 			name = Release;
 		};
