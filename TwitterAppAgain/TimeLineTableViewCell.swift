@@ -9,7 +9,14 @@
 import UIKit
 
 class TimeLineTableViewCell: UITableViewCell {
+    
 
+    @IBOutlet weak var iconimageView: UIImageView!
+    
+    @IBOutlet weak var tweetLabel: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

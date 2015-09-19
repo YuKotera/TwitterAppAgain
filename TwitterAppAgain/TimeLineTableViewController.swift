@@ -9,7 +9,6 @@
 import UIKit
 
 class TimeLineTableViewController: UITableViewController {
-
     
     let dataArray:[[String:String]] = [["title":"タイトル1"],["title":"タイトル2"]]
     

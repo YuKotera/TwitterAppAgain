@@ -26,13 +26,13 @@
         <!--タイムライン一覧-->
         <scene sceneID="FsX-Rp-ywq">
             <objects>
-                <tableViewController id="KDZ-7M-gSl" sceneMemberID="viewController">
+                <tableViewController id="KDZ-7M-gSl" customClass="TimeLineTableViewController" customModule="TwitterAppAgain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" id="zwR-iT-aIU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="Gi1-ge-xed">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="120" id="Gi1-ge-xed" customClass="TimeLineTableViewCell" customModule="TwitterAppAgain" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gi1-ge-xed" id="imp-Cz-cSg">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -65,6 +65,8 @@ kok</string>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="iconimageView" destination="u77-J7-eTB" id="YA4-eo-2sA"/>
+                                    <outlet property="tweetLabel" destination="P18-VK-Ymn" id="umy-SE-oES"/>
                                     <segue destination="vXZ-lx-hvc" kind="show" id="lDz-tT-9JN"/>
                                 </connections>
                             </tableViewCell>

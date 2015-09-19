@@ -13,6 +13,8 @@
 		C8A7B7911BAD3A7500AAD3BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A7B7901BAD3A7500AAD3BD /* Images.xcassets */; };
 		C8A7B7941BAD3A7500AAD3BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A7B7921BAD3A7500AAD3BD /* LaunchScreen.xib */; };
 		C8A7B7A01BAD3A7500AAD3BD /* TwitterAppAgainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A7B79F1BAD3A7500AAD3BD /* TwitterAppAgainTests.swift */; };
+		C8A7B7AA1BAD475A00AAD3BD /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A7B7A91BAD475A00AAD3BD /* TimeLineTableViewController.swift */; };
+		C8A7B7AC1BAD47B700AAD3BD /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A7B7AB1BAD47B700AAD3BD /* TimeLineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		C8A7B7991BAD3A7500AAD3BD /* TwitterAppAgainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterAppAgainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A7B79E1BAD3A7500AAD3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8A7B79F1BAD3A7500AAD3BD /* TwitterAppAgainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAppAgainTests.swift; sourceTree = "<group>"; };
+		C8A7B7A91BAD475A00AAD3BD /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		C8A7B7AB1BAD47B700AAD3BD /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				C8A7B7891BAD3A7500AAD3BD /* AppDelegate.swift */,
+				C8A7B7A91BAD475A00AAD3BD /* TimeLineTableViewController.swift */,
+				C8A7B7AB1BAD47B700AAD3BD /* TimeLineTableViewCell.swift */,
 				C8A7B78B1BAD3A7500AAD3BD /* ViewController.swift */,
 				C8A7B78D1BAD3A7500AAD3BD /* Main.storyboard */,
 				C8A7B7901BAD3A7500AAD3BD /* Images.xcassets */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A7B7AC1BAD47B700AAD3BD /* TimeLineTableViewCell.swift in Sources */,
 				C8A7B78C1BAD3A7500AAD3BD /* ViewController.swift in Sources */,
+				C8A7B7AA1BAD475A00AAD3BD /* TimeLineTableViewController.swift in Sources */,
 				C8A7B78A1BAD3A7500AAD3BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
